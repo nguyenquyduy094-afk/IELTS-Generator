@@ -1,0 +1,36 @@
+/* Basic styles to make the app readable without Tailwind */
+:root {
+  --bg: #f7f7f8;
+  --card: #ffffff;
+  --muted: #6b7280;
+  --accent: #111827;
+}
+html,body,#root {
+  height: 100%;
+  margin: 0;
+  font-family: Inter, Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--accent);
+}
+.container {
+  max-width: 980px;
+  margin: 24px auto;
+  padding: 20px;
+}
+h1 { margin: 0 0 12px 0; font-size: 24px; }
+.controls { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 12px; }
+.controls input[type="text"], .controls select, .controls input[type="number"] {
+  padding: 8px 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  min-width: 180px;
+}
+.buttons { display:flex; gap:8px; margin-bottom:12px; flex-wrap:wrap; }
+button.btn { padding:8px 12px; border-radius:6px; border:1px solid #d1d5db; background:white; cursor:pointer; }
+button.primary { background:#111827; color:white; border: none; }
+.card { background:var(--card); padding:12px; border-radius:8px; border:1px solid #e6e9ef; box-shadow: 0 1px 2px rgba(0,0,0,0.02); }
+.grid { display:grid; gap:10px; }
+.item { padding:10px; border:1px solid #eef2f7; border-radius:8px; background:white; display:flex; justify-content:space-between; }
+.muted { color: var(--muted); font-size:14px; }
+.example { font-style: italic; margin-top:8px; }
+footer { margin-top:20px; color:var(--muted); font-size:13px; }
